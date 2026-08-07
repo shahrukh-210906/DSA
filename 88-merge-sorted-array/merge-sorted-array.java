@@ -3,12 +3,9 @@ class Solution {
         int idx =0;
 
         for (int i =0; i<m+n; i++){
-            if (nums1[i] == 0){
+            if (nums1[i] == 0 && idx < n){
                 nums1[i] = nums2[idx];
                 idx++;
-            }
-            if (idx == n){
-                break;
             }
         }
 
